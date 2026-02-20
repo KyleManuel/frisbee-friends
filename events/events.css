@@ -52,9 +52,9 @@
 
 .event-title{
   margin: 0 0 12px;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.15;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text);
 }

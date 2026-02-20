@@ -43,6 +43,8 @@
   background: #fff;
   border: 2px solid var(--card-border);
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   box-shadow: 0 16px 30px rgba(15,23,42,.06);
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
@@ -50,7 +52,7 @@
 
 .event-card:hover{
   transform: translateY(-2px);
-  border-color: rgba(79,70,229,.20);
+  border-color: #0ea5e9;
   box-shadow: 0 22px 44px rgba(15,23,42,.10);
 }
 
@@ -67,6 +69,9 @@
 
 /* Body */
 .event-body{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
   padding: 26px 26px 22px;
 }
 
@@ -124,6 +129,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+  margin-top: auto;
 }
 
 .event-btn{

@@ -31,18 +31,21 @@ page_css: /events/events.css
     return d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
   }
 
-  function fmtTimeRange(startISO, endISO) {
+    function fmtTimeRange(startISO, endISO, allDay) {
+    if (allDay) return "All day";
+
     const start = new Date(startISO);
     const end = endISO ? new Date(endISO) : null;
 
     const t = (dt) => dt.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
 
-    // If no end, just show start time
     if (!end) return t(start);
 
-    // If same day, show range
+    const diff = Math.abs(end.getTime() - start.getTime());
+    if (diff < 60 * 1000) return t(start);
+
     return `${t(start)} – ${t(end)}`;
-  }
+    }
 
   function isUpcoming(startISO) {
     // allow today + future (with small grace window)
@@ -58,8 +61,11 @@ page_css: /events/events.css
   function cardHtml(e) {
     const title = escapeHtml(e.title || "Untitled event");
     const location = escapeHtml(e.location || "");
-    const dateText = e.startISO ? fmtDate(e.startISO) : "";
-    const timeText = e.startISO ? fmtTimeRange(e.startISO, e.endISO) : "";
+    const dateText =
+    (e.startISO && e.endISO && e.allDay)
+        ? `${fmtDate(e.startISO)} – ${fmtDate(e.endISO)}`
+        : (e.startISO ? fmtDate(e.startISO) : "");
+    const timeText = e.startISO ? fmtTimeRange(e.startISO, e.endISO, e.allDay) : "";
     const type = escapeHtml(e.type || defaultType);
     const participants = (typeof e.participants === "number") ? `${e.participants} participants` : "";
     const image = escapeHtml(e.image || fallbackImg);

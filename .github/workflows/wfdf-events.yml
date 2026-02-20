@@ -1,0 +1,41 @@
+name: Update WFDF events
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # daily 03:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install deps
+        run: npm ci || npm install
+
+      - name: Fetch WFDF ICS
+        run: |
+          mkdir -p tmp assets/data
+          curl -L --fail \
+            "https://wfdf.sport/?post_type=tribe_events&ical=1&eventDisplay=list" \
+            -o tmp/wfdf.ics
+
+      - name: Convert ICS -> JSON
+        run: node assets/js/ics-to-json.mjs tmp/wfdf.ics assets/data/events.json
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/data/events.json
+          git diff --cached --quiet || (git commit -m "chore: update WFDF events" && git push)

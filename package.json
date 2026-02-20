@@ -1,0 +1,8 @@
+{
+  "name": "frisbee-friends",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "node-ical": "^0.16.0"
+  }
+}

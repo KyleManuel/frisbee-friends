@@ -62,7 +62,7 @@ title: Home
             <div class="feature-link">Browse Shop <span aria-hidden="true">→</span></div>
         </a>
 
-        <a class="feature-card" data-accent="pink" href="{{ '/jersey-builder/' | relative_url }}">
+        <a class="feature-card" data-accent="pink" href="{{ '/jersey/' | relative_url }}">
             <div class="feature-icon feature-icon--pink" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
                 <path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 0-4h-1a1 1 0 0 1 0-2h2a4 4 0 0 0 0-8h-2z"></path>

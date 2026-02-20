@@ -4,11 +4,11 @@ title: Events
 page_css: /events/events.css
 ---
 
-<section class="events-page">
+<section class="page-header-container">
   <div class="container">
-    <div class="events-head">
-      <h1 class="events-title">Events</h1>
-      <p class="events-subtitle">Upcoming events (auto-synced).</p>
+    <div class="page-head">
+      <h1 class="page-title">Events</h1>
+      <p class="page-subtitle">Find tournaments, pickup games, and clinics near you</p>
     </div>
 
     <div id="events-grid" class="events-cards"></div>

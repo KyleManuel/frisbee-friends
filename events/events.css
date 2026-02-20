@@ -6,31 +6,6 @@
   --blue: #0ea5e9;
 }
 
-.events-page{
-  padding: 54px 0 90px;
-}
-
-.events-head{
-  text-align:center;
-  margin-bottom: 26px;
-}
-
-.events-title{
-  margin: 0 0 10px;
-  font-size: 54px;
-  line-height: 1.05;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  color: var(--text);
-}
-
-.events-subtitle{
-  margin: 0 auto;
-  max-width: 760px;
-  color: var(--muted);
-  font-size: 18px;
-}
-
 .events-cards{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -85,7 +60,10 @@
 }
 
 .event-pill{
-  display: inline-flex;
+  display: inline-flex !important;
+  width: fit-content !important;
+  max-width: 100%;
+  align-self: flex-start;
   align-items: center;
   height: 34px;
   padding: 0 16px;

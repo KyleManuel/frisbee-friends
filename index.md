@@ -105,3 +105,43 @@ title: Home
     </div>
   </div>
 </section>
+
+<section class="product-section">
+  <div class="container">
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <a class="product-card" href="{{ '/shop/' | relative_url }}">
+        <div class="product-media">
+          <img src="{{ '/assets/img/product-jersey.jpg' | relative_url }}" alt="Custom Team Jerseys">
+        </div>
+
+        <div class="product-body">
+          <h3 class="product-title">Custom Team Jerseys</h3>
+          <p class="product-subtitle">Sublimated designs with your team colors and logo</p>
+
+          <div class="product-bottom">
+            <div class="product-price">From $45</div>
+            <div class="product-cta">Shop Now</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product 2 -->
+      <a class="product-card" href="{{ '/shop/' | relative_url }}">
+        <div class="product-media">
+          <img src="{{ '/assets/img/product-disc.jpg' | relative_url }}" alt="Professional Discs">
+        </div>
+
+        <div class="product-body">
+          <h3 class="product-title">Professional Discs</h3>
+          <p class="product-subtitle">WFDF approved discs for competitive play</p>
+
+          <div class="product-bottom">
+            <div class="product-price">$15</div>
+            <div class="product-cta">Shop Now</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>

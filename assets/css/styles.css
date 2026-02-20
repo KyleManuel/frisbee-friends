@@ -31,8 +31,12 @@ a{ color:inherit; text-decoration:none; }
   justify-content:space-between;
   padding: 16px 0;
 }
-
-.brand{ display:inline-flex; align-items:center; gap:10px; }
+.brand-logo{
+  height: 20px;       /* adjust if needed */
+  width: auto;
+  display: block;
+}
+.brand{ display:inline-flex; align-items:center;}
 .brand-mark{
   display:inline-block;
   font-weight:800;

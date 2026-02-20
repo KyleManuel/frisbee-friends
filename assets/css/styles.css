@@ -31,7 +31,10 @@ a{ color:inherit; text-decoration:none; }
 }
 
 .page-title{
-  color: var(--headergradient) !important;
+  background: var(--headergradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-size: 54px;
   font-weight: 900;
   letter-spacing: -0.02em;

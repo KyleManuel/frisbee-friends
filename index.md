@@ -19,10 +19,10 @@ title: Home
         Shop Gear
         <span class="btn-icon" aria-hidden="true">
           <!-- shopping bag icon -->
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-            <path d="M6 7h12l-1 14H7L6 7z"></path>
-            <path d="M9 7a3 3 0 0 1 6 0"></path>
-          </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M6 8h12l-1 12H7L6 8z"></path>
+            <path d="M9 8a3 3 0 0 1 6 0"></path>
+            </svg>
         </span>
       </a>
 

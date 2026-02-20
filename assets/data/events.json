@@ -1,0 +1,52 @@
+[
+  {
+    "uid": "10000113-1782604800-1783209599@wfdf.sport",
+    "title": "WFDF 2026 World Masters Ultimate Club Championships  (WMUC)",
+    "description": "",
+    "location": "Nottingham, UK, Highfields Sports Complex, Nottingham, United Kingdom",
+    "url": "https://wfdf.sport/event/wfdf-2026-world-masters-ultimate-club-championships/",
+    "startISO": "2026-06-28T00:00:00.000Z",
+    "endISO": "2026-07-05T00:00:00.000Z",
+    "allDay": true
+  },
+  {
+    "uid": "10000114-1783728000-1784419199@wfdf.sport",
+    "title": "WFDF 2026 World Junior Ultimate Championships  (WJUC)",
+    "description": "",
+    "location": "Logroño, Spain, Logroño, La Rioja, Spain",
+    "url": "https://wfdf.sport/event/wfdf-2026-world-junior-ultimate-championships/",
+    "startISO": "2026-07-11T00:00:00.000Z",
+    "endISO": "2026-07-19T00:00:00.000Z",
+    "allDay": true
+  },
+  {
+    "uid": "10000117-1785369600-1785715199@wfdf.sport",
+    "title": "WFDF 2026 Flying Disc Festival",
+    "description": "",
+    "location": "Germany, Germany",
+    "url": "https://wfdf.sport/event/wfdf-2026-flying-disc-festival/",
+    "startISO": "2026-07-30T00:00:00.000Z",
+    "endISO": "2026-08-03T00:00:00.000Z",
+    "allDay": true
+  },
+  {
+    "uid": "10000115-1786752000-1787443199@wfdf.sport",
+    "title": "WFDF 2026 World Ultimate Club Championships  (WUCC)",
+    "description": "Provisional Bid List \n ",
+    "location": "Limerick, Ireland, University of Limerick, Limerick, Limerick, Ireland",
+    "url": "https://wfdf.sport/event/wfdf-2026-world-ultimate-club-championships/",
+    "startISO": "2026-08-15T00:00:00.000Z",
+    "endISO": "2026-08-23T00:00:00.000Z",
+    "allDay": true
+  },
+  {
+    "uid": "10000116-1788912000-1789257599@wfdf.sport",
+    "title": "WFDF 2026 World Team Disc Golf Championships (WTDGC)",
+    "description": "Provisional DEADLINES\nTeam Registration: CLOSED – Bid list\nRoster Lock:\nRoster Endorsement (NF):\nEvent Registration: CLOSED\nPlayer Registration:",
+    "location": "Vilnius, Lithuania, Vilnius, Lithuania",
+    "url": "https://wfdf.sport/event/wfdf-2026-world-team-disc-golf-championships/",
+    "startISO": "2026-09-09T00:00:00.000Z",
+    "endISO": "2026-09-13T00:00:00.000Z",
+    "allDay": true
+  }
+]

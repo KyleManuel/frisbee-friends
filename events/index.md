@@ -8,72 +8,139 @@ page_css: /events/events.css
   <div class="container">
     <div class="events-head">
       <h1 class="events-title">Events</h1>
-      <p class="events-subtitle">Upcoming WFDF events (auto-synced).</p>
+      <p class="events-subtitle">Upcoming events (auto-synced).</p>
     </div>
 
-    <div id="events-grid" class="events-grid"></div>
+    <div id="events-grid" class="events-cards"></div>
     <div id="events-empty" class="events-empty" style="display:none;">No upcoming events found.</div>
   </div>
 </section>
 
 <script>
-  (function () {
-    const grid = document.getElementById("events-grid");
-    const empty = document.getElementById("events-empty");
+(function () {
+  const grid = document.getElementById("events-grid");
+  const empty = document.getElementById("events-empty");
 
-    function fmtDate(iso) {
-      const d = new Date(iso);
-      return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-    }
+  const jsonUrl = "{{ '/assets/data/events.json' | relative_url }}";
 
-    function isUpcoming(startISO) {
-      return new Date(startISO).getTime() >= Date.now() - (24 * 60 * 60 * 1000); // allow yesterday
-    }
+  const fallbackImg = "{{ '/assets/img/community-event.jpg' | relative_url }}"; // use yours
+  const defaultType = "Tournament"; // WFDF ICS usually doesn’t include a “type” field
 
-    fetch("{{ '/assets/data/events.json' | relative_url }}")
-      .then(r => r.ok ? r.json() : Promise.reject(r))
-      .then(events => {
-        const upcoming = (events || []).filter(e => e.startISO && isUpcoming(e.startISO)).slice(0, 30);
+  function fmtDate(iso) {
+    const d = new Date(iso);
+    return d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+  }
 
-        if (!upcoming.length) {
-          empty.style.display = "block";
-          return;
-        }
+  function fmtTimeRange(startISO, endISO) {
+    const start = new Date(startISO);
+    const end = endISO ? new Date(endISO) : null;
 
-        grid.innerHTML = upcoming.map(e => {
-          const dateText = e.endISO ? `${fmtDate(e.startISO)} – ${fmtDate(e.endISO)}` : fmtDate(e.startISO);
-          const location = (e.location || "").trim();
-          const link = (e.url || "").trim();
+    const t = (dt) => dt.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
 
-          return `
-            <article class="event-card">
-              <div class="event-top">
-                <div class="event-date">${dateText}</div>
-              </div>
+    // If no end, just show start time
+    if (!end) return t(start);
 
-              <h3 class="event-name">${escapeHtml(e.title)}</h3>
+    // If same day, show range
+    return `${t(start)} – ${t(end)}`;
+  }
 
-              ${location ? `<div class="event-loc">${escapeHtml(location)}</div>` : ``}
+  function isUpcoming(startISO) {
+    // allow today + future (with small grace window)
+    return new Date(startISO).getTime() >= Date.now() - (12 * 60 * 60 * 1000);
+  }
 
-              <div class="event-actions">
-                ${link ? `<a class="event-btn" href="${escapeAttr(link)}" target="_blank" rel="noopener">View</a>` : ``}
-              </div>
-            </article>
-          `;
-        }).join("");
-      })
-      .catch(() => {
+  function escapeHtml(str) {
+    return String(str ?? "").replace(/[&<>"']/g, s => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+    }[s]));
+  }
+
+  function cardHtml(e) {
+    const title = escapeHtml(e.title || "Untitled event");
+    const location = escapeHtml(e.location || "");
+    const dateText = e.startISO ? fmtDate(e.startISO) : "";
+    const timeText = e.startISO ? fmtTimeRange(e.startISO, e.endISO) : "";
+    const type = escapeHtml(e.type || defaultType);
+    const participants = (typeof e.participants === "number") ? `${e.participants} participants` : "";
+    const image = escapeHtml(e.image || fallbackImg);
+
+    const learnMoreHref = e.url ? escapeHtml(e.url) : "#";
+    const joinHref = e.joinUrl ? escapeHtml(e.joinUrl) : learnMoreHref;
+
+    return `
+      <article class="event-card">
+        <div class="event-img">
+          <img src="${image}" alt="">
+        </div>
+
+        <div class="event-body">
+          <h2 class="event-title">${title}</h2>
+          <span class="event-pill">${type}</span>
+
+          <ul class="event-meta">
+            ${dateText ? `<li>${iconCalendar()}<span>${escapeHtml(dateText)}</span></li>` : ``}
+            ${timeText ? `<li>${iconClock()}<span>${escapeHtml(timeText)}</span></li>` : ``}
+            ${location ? `<li>${iconPin()}<span>${location}</span></li>` : ``}
+            ${participants ? `<li>${iconUsers()}<span>${escapeHtml(participants)}</span></li>` : ``}
+          </ul>
+
+          <div class="event-actions">
+            <a class="event-btn event-btn-primary" href="${joinHref}" target="_blank" rel="noopener">Join Event</a>
+            <a class="event-btn event-btn-ghost" href="${learnMoreHref}" target="_blank" rel="noopener">Learn More</a>
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
+  function iconCalendar() {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true">
+      <path d="M8 3v3M16 3v3"></path>
+      <rect x="4" y="6" width="16" height="14" rx="2"></rect>
+      <path d="M4 10h16"></path>
+    </svg>`;
+  }
+
+  function iconClock() {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true">
+      <circle cx="12" cy="12" r="9"></circle>
+      <path d="M12 7v5l3 2"></path>
+    </svg>`;
+  }
+
+  function iconPin() {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true">
+      <path d="M12 21s7-4.5 7-11a7 7 0 0 0-14 0c0 6.5 7 11 7 11z"></path>
+      <circle cx="12" cy="10" r="2"></circle>
+    </svg>`;
+  }
+
+  function iconUsers() {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+      <circle cx="9" cy="7" r="3"></circle>
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+      <path d="M16 3.13a3 3 0 0 1 0 5.75"></path>
+    </svg>`;
+  }
+
+  fetch(jsonUrl)
+    .then(r => r.ok ? r.json() : Promise.reject(r))
+    .then(events => {
+      const upcoming = (events || [])
+        .filter(e => e.startISO && isUpcoming(e.startISO))
+        .slice(0, 20);
+
+      if (!upcoming.length) {
         empty.style.display = "block";
-        empty.textContent = "Could not load events right now.";
-      });
+        return;
+      }
 
-    function escapeHtml(str) {
-      return String(str).replace(/[&<>"']/g, s => ({
-        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-      }[s]));
-    }
-    function escapeAttr(str) {
-      return escapeHtml(str).replace(/"/g, "&quot;");
-    }
-  })();
+      grid.innerHTML = upcoming.map(cardHtml).join("");
+    })
+    .catch(() => {
+      empty.style.display = "block";
+      empty.textContent = "Could not load events right now.";
+    });
+})();
 </script>

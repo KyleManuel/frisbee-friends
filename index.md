@@ -49,28 +49,21 @@ title: Home
         From premium gear to custom designs and global events – Frisbee Friends is your ultimate companion
       </p>
     </div>
-
     <div class="feature-grid">
-        <!-- Premium Shop -->
-        <a class="feature-card" style="--accent:#4f46e5;" href="{{ '/shop/' | relative_url }}">
-            <div class="feature-icon" aria-hidden="true">
-            <!-- shopping bag -->
+        <a class="feature-card" data-accent="purple" href="{{ '/shop/' | relative_url }}">
+            <div class="feature-icon feature-icon--purple" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
                 <path d="M6 8h12l-1 12H7L6 8z"></path>
                 <path d="M9 8a3 3 0 0 1 6 0"></path>
             </svg>
             </div>
-
             <h3>Premium Shop</h3>
             <p>High-quality jerseys, discs, and gear for players and teams</p>
-
             <div class="feature-link">Browse Shop <span aria-hidden="true">→</span></div>
         </a>
 
-        <!-- Custom Builders -->
-        <a class="feature-card" style="--accent:#a855f7;" href="{{ '/jersey-builder/' | relative_url }}">
-            <div class="feature-icon" aria-hidden="true">
-            <!-- palette -->
+        <a class="feature-card" data-accent="pink" href="{{ '/jersey-builder/' | relative_url }}">
+            <div class="feature-icon feature-icon--pink" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
                 <path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 0-4h-1a1 1 0 0 1 0-2h2a4 4 0 0 0 0-8h-2z"></path>
                 <circle cx="8.5" cy="10.5" r="1"></circle>
@@ -78,34 +71,26 @@ title: Home
                 <circle cx="15.5" cy="10.5" r="1"></circle>
             </svg>
             </div>
-
             <h3>Custom Builders</h3>
             <p>Design your own jerseys and discs with our interactive tools</p>
-
             <div class="feature-link">Start Designing <span aria-hidden="true">→</span></div>
         </a>
 
-        <!-- Events Hub -->
-        <a class="feature-card" style="--accent:#ec4899;" href="{{ '/events/' | relative_url }}">
-            <div class="feature-icon" aria-hidden="true">
-            <!-- calendar -->
+        <a class="feature-card" data-accent="rose" href="{{ '/events/' | relative_url }}">
+            <div class="feature-icon feature-icon--rose" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
                 <path d="M8 3v3M16 3v3"></path>
                 <rect x="4" y="6" width="16" height="14" rx="2"></rect>
                 <path d="M4 10h16"></path>
             </svg>
             </div>
-
             <h3>Events Hub</h3>
             <p>Tournaments, pickup games, and leagues happening near you</p>
-
             <div class="feature-link">Explore Events <span aria-hidden="true">→</span></div>
         </a>
 
-        <!-- Global Community -->
-        <a class="feature-card" style="--accent:#0ea5e9;" href="{{ '/community/' | relative_url }}">
-            <div class="feature-icon" aria-hidden="true">
-            <!-- users -->
+        <a class="feature-card" data-accent="blue" href="{{ '/community/' | relative_url }}">
+            <div class="feature-icon feature-icon--blue" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                 <circle cx="9" cy="7" r="3"></circle>
@@ -113,10 +98,8 @@ title: Home
                 <path d="M16 3.13a3 3 0 0 1 0 5.75"></path>
             </svg>
             </div>
-
             <h3>Global Community</h3>
             <p>Connect with players, share content, and grow the sport</p>
-
             <div class="feature-link">Join Community <span aria-hidden="true">→</span></div>
         </a>
     </div>

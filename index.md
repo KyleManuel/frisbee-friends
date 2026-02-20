@@ -151,3 +151,32 @@ title: Home
     </div>
   </div>
 </section>
+
+<section class="community-cta">
+  <div class="container community-inner">
+    <div class="community-copy">
+      <h2 class="community-title">Join Our Global<br/>Community</h2>
+      <p class="community-text">
+        Connect with thousands of Ultimate Frisbee players worldwide. Share your passion,
+        find teammates, and compete in events.
+      </p>
+
+      <a class="btn btn-outline btn-cta" href="{{ '/community/' | relative_url }}">
+        Learn More
+        <span class="btn-icon" aria-hidden="true">
+          <!-- users icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="3"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a3 3 0 0 1 0 5.75"></path>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="community-media">
+      <img src="{{ '/assets/img/community-event.jpg' | relative_url }}" alt="Ultimate Frisbee community event">
+    </div>
+  </div>
+</section>

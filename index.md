@@ -108,6 +108,12 @@ title: Home
 
 <section class="product-section">
   <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-subtitle">
+        Check out our most popular items
+      </p>
+    </div>
     <div class="product-grid">
       <!-- Product 1 -->
       <a class="product-card" href="{{ '/shop/' | relative_url }}">

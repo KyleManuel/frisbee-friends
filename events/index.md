@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Events
+page_css: /events/events.css
 ---
 
 <section class="events-page">

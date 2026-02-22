@@ -30,8 +30,8 @@ page_css: /events/events.css
     const d = new Date(iso);
     return d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
   }
-
-    function fmtTimeRange(startISO, endISO, allDay) {
+  
+  function fmtTimeRange(startISO, endISO, allDay) {
     if (allDay) return "All day";
 
     const start = new Date(startISO);

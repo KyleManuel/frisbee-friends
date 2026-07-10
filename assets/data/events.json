@@ -2,7 +2,7 @@
   {
     "uid": "10000114-1783728000-1784419199@wfdf.sport",
     "title": "WFDF 2026 World Junior Ultimate Championships  (WJUC)",
-    "description": "",
+    "description": "We are absolutely thrilled to welcome the world back to Logroño for the WFDF 2026 World Junior Ultimate Championships. \nThe city cannot wait to open its arms once again to all athletes, families, and friends from across the globe — ready to share once more our warm hospitality and turn on again the organizational machine that made last year’s event so special. The 2025 championships showed us how Ultimate athletes make the perfect guests for a city: respectful, joyful, and spirited in everything they do. We can’t wait to see that spirit fill Logroño’s streets, fields, and stands once again. Our goal for 2026 is not just to repeat the 2025 success, but to make it even better — perfecting the details to create an unforgettable experience for players, staff, and fans alike. Over the coming months, our team will work to grow Ultimate in Logroño even further, inspiring more children, young people, and families to fall in love with our amazing sport. Get ready for another incredible celebration of sport, friendship, and competition — we’ll be ready for you!",
     "location": "Logroño, Spain, Logroño, La Rioja, Spain",
     "url": "https://wfdf.sport/event/wfdf-2026-world-junior-ultimate-championships/",
     "startISO": "2026-07-11T00:00:00.000Z",
@@ -12,7 +12,7 @@
   {
     "uid": "10000117-1785369600-1785715199@wfdf.sport",
     "title": "WFDF 2026 Flying Disc Festival",
-    "description": "",
+    "description": "The Frisbee Festival München 2026 will take place as a multi-day festival event bringing together athletes, teams, officials, and guests from around the world. As part of the festival’s programme, the FPA & WFDF 2026 World Freestyle Flying Disc Championships will be held from 29 July to 2 August 2026, featuring four days of competition across Open Pairs, Women’s Pairs, Mixed Pairs, and Open Coop divisions. \nThe Freestyle World Championships are now unified into a single event, jointly sanctioned by FPA and WFDF, preserving the legacy and competitive focus of FPA Worlds while fully integrating freestyle into the global WFDF framework. Hosted at the Sportschule Oberhaching, the event will also include workshops, demonstrations, and activities designed to introduce Flying Disc sports to new audiences, creating an open and welcoming environment that reflects the principles of Sport for All.",
     "location": "Germany, Germany",
     "url": "https://wfdf.sport/event/wfdf-2026-flying-disc-festival/",
     "startISO": "2026-07-30T00:00:00.000Z",
@@ -22,7 +22,7 @@
   {
     "uid": "10000115-1786752000-1787443199@wfdf.sport",
     "title": "WFDF 2026 World Ultimate Club Championships  (WUCC)",
-    "description": "Provisional Bid List \n ",
+    "description": "WFDF 2026 World Ultimate Club Championships (WUCC) will be staged in Limerick, Ireland from Saturday 15th to Saturday 22nd August, 2026. The event will be held at the University of Limerick. WUCC is WFDF’s premier Club Championship event for the flying disc discipline of Ultimate. The event is held every four years and is composed of club teams who are endorsed by their National Federations. \nLOC Tournament Director and Siege Events’ lead Barry Walsh commented “We are yet again delighted to be hosting one of WFDF’s major events in Limerick. The facilities here at the University of Limerick are world class. The modern campus will give the event a unique after game atmosphere and will allow for a stress-free experience. Our highly skilled and experienced organizing committee and the city stands fully behind us to make this a memorable tournament.” \n  \n ",
     "location": "Limerick, Ireland, University of Limerick, Limerick, Limerick, Ireland",
     "url": "https://wfdf.sport/event/wfdf-2026-world-ultimate-club-championships/",
     "startISO": "2026-08-15T00:00:00.000Z",
@@ -32,51 +32,11 @@
   {
     "uid": "10000116-1788912000-1789257599@wfdf.sport",
     "title": "WFDF 2026 World Team Disc Golf Championships (WTDGC)",
-    "description": "Provisional DEADLINES\nTeam Registration: CLOSED – Bid list\nRoster Lock:\nRoster Endorsement (NF):\nEvent Registration: CLOSED\nPlayer Registration:",
+    "description": "The World Flying Disc Federation (WFDF) and the Local Organising Committee (LOC) -consisting of Team DiscCity, the Lithuanian Flying Disc Federation, and the Lithuanian Disc Golf Federation – are pleased to present the WFDF 2026 World Team Disc Golf Championships (WTDGC), to be hosted in Vilnius, Lithuania. \nThe 2026 edition will mark the sixth WTDGC and, for the first time, will feature two divisions: Open Teams and Masters Teams. The championship will take place over four (4) days from Wednesday 9th to Saturday 12th September 2026, on two 18-hole courses located in the scenic Pavilniai Regional Park area of Vilnius. WFDF extends an invitation to all member National Federations in good standing and their affiliated Disc Golf Associations to register their national teams for participation. It is expected that around 25 to 30 nations, bringing together more than 250 athletes, will take part in the tournament.",
     "location": "Vilnius, Lithuania, Vilnius, Lithuania",
     "url": "https://wfdf.sport/event/wfdf-2026-world-team-disc-golf-championships/",
     "startISO": "2026-09-09T00:00:00.000Z",
     "endISO": "2026-09-13T00:00:00.000Z",
-    "allDay": true
-  },
-  {
-    "uid": "10000119-1809907200-1809993599@wfdf.sport",
-    "title": "International Spirit of the Game Day",
-    "description": "On May 10th each year, the International Spirit of the Game Day is the opportunity to celebrate, share and advocate for Spirit of the Game and within the Flying Disc Sports community and beyond through activities like reflections, discussions, workshops, events and games or any other advocacy. \nInternational Spirit of the Game Day is a great opportunity to celebrate Spirit of the Game, and to recruit young or new players to the sport, engage with communities outside of Flying Disc sports, and to engage with brands. It’s encouraged that Member Federations, their communities and other stakeholders such as partners organise community events to celebrate Spirit of the Game. \n\n\nFor ideas on how stakeholders can celebrate, have a look at the iSOTGDay Planning Sheet. No matter how you end up celebrating, share SOTG through word-of-mouth, social media (#iSOTGDay, #SpiritBeyondSports and mention us via @wfdf_sotg_comm) or other traditional media channels. \nFor 2026, the WFDF SOTG Commission is planning to organise a livestreamed and recorded webinar discussing Spirit Beyond Sports with well-known athletes and organisers from the various disc disciplines. Specific details such as time and place will be announced on the WFDF news and social media channels  later.",
-    "location": "",
-    "url": "https://wfdf.sport/event/isotgday/2027-05-10/",
-    "startISO": "2027-05-10T00:00:00.000Z",
-    "endISO": "2027-05-11T00:00:00.000Z",
-    "allDay": true
-  },
-  {
-    "uid": "10000120-1841529600-1841615999@wfdf.sport",
-    "title": "International Spirit of the Game Day",
-    "description": "On May 10th each year, the International Spirit of the Game Day is the opportunity to celebrate, share and advocate for Spirit of the Game and within the Flying Disc Sports community and beyond through activities like reflections, discussions, workshops, events and games or any other advocacy. \nInternational Spirit of the Game Day is a great opportunity to celebrate Spirit of the Game, and to recruit young or new players to the sport, engage with communities outside of Flying Disc sports, and to engage with brands. It’s encouraged that Member Federations, their communities and other stakeholders such as partners organise community events to celebrate Spirit of the Game. \n\n\nFor ideas on how stakeholders can celebrate, have a look at the iSOTGDay Planning Sheet. No matter how you end up celebrating, share SOTG through word-of-mouth, social media (#iSOTGDay, #SpiritBeyondSports and mention us via @wfdf_sotg_comm) or other traditional media channels. \nFor 2026, the WFDF SOTG Commission is planning to organise a livestreamed and recorded webinar discussing Spirit Beyond Sports with well-known athletes and organisers from the various disc disciplines. Specific details such as time and place will be announced on the WFDF news and social media channels  later.",
-    "location": "",
-    "url": "https://wfdf.sport/event/isotgday/2028-05-10/",
-    "startISO": "2028-05-10T00:00:00.000Z",
-    "endISO": "2028-05-11T00:00:00.000Z",
-    "allDay": true
-  },
-  {
-    "uid": "10000121-1873065600-1873151999@wfdf.sport",
-    "title": "International Spirit of the Game Day",
-    "description": "On May 10th each year, the International Spirit of the Game Day is the opportunity to celebrate, share and advocate for Spirit of the Game and within the Flying Disc Sports community and beyond through activities like reflections, discussions, workshops, events and games or any other advocacy. \nInternational Spirit of the Game Day is a great opportunity to celebrate Spirit of the Game, and to recruit young or new players to the sport, engage with communities outside of Flying Disc sports, and to engage with brands. It’s encouraged that Member Federations, their communities and other stakeholders such as partners organise community events to celebrate Spirit of the Game. \n\n\nFor ideas on how stakeholders can celebrate, have a look at the iSOTGDay Planning Sheet. No matter how you end up celebrating, share SOTG through word-of-mouth, social media (#iSOTGDay, #SpiritBeyondSports and mention us via @wfdf_sotg_comm) or other traditional media channels. \nFor 2026, the WFDF SOTG Commission is planning to organise a livestreamed and recorded webinar discussing Spirit Beyond Sports with well-known athletes and organisers from the various disc disciplines. Specific details such as time and place will be announced on the WFDF news and social media channels  later.",
-    "location": "",
-    "url": "https://wfdf.sport/event/isotgday/2029-05-10/",
-    "startISO": "2029-05-10T00:00:00.000Z",
-    "endISO": "2029-05-11T00:00:00.000Z",
-    "allDay": true
-  },
-  {
-    "uid": "10000122-1904601600-1904687999@wfdf.sport",
-    "title": "International Spirit of the Game Day",
-    "description": "On May 10th each year, the International Spirit of the Game Day is the opportunity to celebrate, share and advocate for Spirit of the Game and within the Flying Disc Sports community and beyond through activities like reflections, discussions, workshops, events and games or any other advocacy. \nInternational Spirit of the Game Day is a great opportunity to celebrate Spirit of the Game, and to recruit young or new players to the sport, engage with communities outside of Flying Disc sports, and to engage with brands. It’s encouraged that Member Federations, their communities and other stakeholders such as partners organise community events to celebrate Spirit of the Game. \n\n\nFor ideas on how stakeholders can celebrate, have a look at the iSOTGDay Planning Sheet. No matter how you end up celebrating, share SOTG through word-of-mouth, social media (#iSOTGDay, #SpiritBeyondSports and mention us via @wfdf_sotg_comm) or other traditional media channels. \nFor 2026, the WFDF SOTG Commission is planning to organise a livestreamed and recorded webinar discussing Spirit Beyond Sports with well-known athletes and organisers from the various disc disciplines. Specific details such as time and place will be announced on the WFDF news and social media channels  later.",
-    "location": "",
-    "url": "https://wfdf.sport/event/isotgday/2030-05-10/",
-    "startISO": "2030-05-10T00:00:00.000Z",
-    "endISO": "2030-05-11T00:00:00.000Z",
     "allDay": true
   }
 ]

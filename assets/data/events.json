@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "uid": "10000117-1785369600-1785715199@wfdf.sport",
+    "title": "WFDF 2026 Flying Disc Festival",
+    "description": "The Frisbee Festival München 2026 will take place as a multi-day festival event bringing together athletes, teams, officials, and guests from around the world. As part of the festival’s programme, the FPA & WFDF 2026 World Freestyle Flying Disc Championships will be held from 29 July to 2 August 2026, featuring four days of competition across Open Pairs, Women’s Pairs, Mixed Pairs, and Open Coop divisions. \nThe Freestyle World Championships are now unified into a single event, jointly sanctioned by FPA and WFDF, preserving the legacy and competitive focus of FPA Worlds while fully integrating freestyle into the global WFDF framework. Hosted at the Sportschule Oberhaching, the event will also include workshops, demonstrations, and activities designed to introduce Flying Disc sports to new audiences, creating an open and welcoming environment that reflects the principles of Sport for All.",
+    "location": "Germany, Germany",
+    "url": "https://wfdf.sport/event/wfdf-2026-flying-disc-festival/",
+    "startISO": "2026-07-30T00:00:00.000Z",
+    "endISO": "2026-08-03T00:00:00.000Z",
+    "allDay": true
+  },
+  {
+    "uid": "10000115-1786752000-1787443199@wfdf.sport",
+    "title": "WFDF 2026 World Ultimate Club Championships  (WUCC)",
+    "description": "WFDF 2026 World Ultimate Club Championships (WUCC) will be staged in Limerick, Ireland from Saturday 15th to Saturday 22nd August, 2026. The event will be held at the University of Limerick. WUCC is WFDF’s premier Club Championship event for the flying disc discipline of Ultimate. The event is held every four years and is composed of club teams who are endorsed by their National Federations. \nLOC Tournament Director and Siege Events’ lead Barry Walsh commented “We are yet again delighted to be hosting one of WFDF’s major events in Limerick. The facilities here at the University of Limerick are world class. The modern campus will give the event a unique after game atmosphere and will allow for a stress-free experience. Our highly skilled and experienced organizing committee and the city stands fully behind us to make this a memorable tournament.” \n  \n  \nDownload the 2026 WUCC Bulletin (PDF)",
+    "location": "Limerick, Ireland, University of Limerick, Limerick, Limerick, Ireland",
+    "url": "https://wfdf.sport/event/wfdf-2026-world-ultimate-club-championships/",
+    "startISO": "2026-08-15T00:00:00.000Z",
+    "endISO": "2026-08-23T00:00:00.000Z",
+    "allDay": true
+  },
+  {
+    "uid": "10000116-1788912000-1789257599@wfdf.sport",
+    "title": "WFDF 2026 World Team Disc Golf Championships (WTDGC)",
+    "description": "The World Flying Disc Federation (WFDF) and the Local Organising Committee (LOC) -consisting of Team DiscCity, the Lithuanian Flying Disc Federation, and the Lithuanian Disc Golf Federation – are pleased to present the WFDF 2026 World Team Disc Golf Championships (WTDGC), to be hosted in Vilnius, Lithuania. \nThe 2026 edition will mark the sixth WTDGC and, for the first time, will feature two divisions: Open Teams and Masters Teams. The championship will take place over four (4) days from Wednesday 9th to Saturday 12th September 2026, on two 18-hole courses located in the scenic Pavilniai Regional Park area of Vilnius. WFDF extends an invitation to all member National Federations in good standing and their affiliated Disc Golf Associations to register their national teams for participation. It is expected that around 25 to 30 nations, bringing together more than 250 athletes, will take part in the tournament.",
+    "location": "Vilnius, Lithuania, Vilnius, Lithuania",
+    "url": "https://wfdf.sport/event/wfdf-2026-world-team-disc-golf-championships/",
+    "startISO": "2026-09-09T00:00:00.000Z",
+    "endISO": "2026-09-13T00:00:00.000Z",
+    "allDay": true
+  }
+]
